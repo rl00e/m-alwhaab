@@ -1,0 +1,629 @@
+
+/* 
+* ==> all الكل
+font-family: "Baloo Paaji", cursive;
+*/
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Baloo Chettan 2", cursive;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    margin: 0;
+    /* font-family: "Open Sans", sans-serif; */
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    overflow-x: hidden;
+    /* font-family: 'Baloo Paaji', cursive; */
+}
+
+/* ============ Start Screen Responsive ============ */
+
+.container {
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Big  */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* Medium  */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/* Small  */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* ============ End Screen Responsive ============ */
+
+/* ============ Start Nav bar ============ */
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000000;
+}
+
+.nav-bar .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px black;
+    height: 12vh;
+    align-items: center;
+}
+
+.nav-bar .container .links ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+.nav-bar .container .logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-bar .container .links ul li a {
+    font-weight: bold;
+    color: #fff;
+}
+
+.nav-bar .container .links ul li a:hover {
+    color: #534688;
+}
+
+.nav-bar .container .links ul li .home {
+    display: block;
+    border: solid 3px #534688;
+    padding: 10px 20px;
+    background: #534688;
+    color: white;
+}
+
+.nav-bar .container .links ul li .home:hover {
+    background-color: #fff;
+}
+
+/* Big  */
+@media (max-width: 1200px) {
+}
+/* Medium  */
+@media (max-width: 992px) {
+}
+
+/* Small  */
+@media (max-width: 768px) {
+    .nav-bar .container .links {
+        display: none;
+    }
+}
+
+/* ============ End Nav bar ============ */
+
+/* ============ Start Landing page ============ */
+
+.landing-page {
+    background-image: url("../images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.landing-page .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+}
+.landing-page .container {
+    width: fit-content;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 10000;
+}
+
+.landing-page .container h1 {
+    font-size: 55px;
+    color: #444;
+}
+.landing-page .container .my-name {
+    color: #212529e6;
+}
+.landing-page .container p {
+    width: 100%;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: #111;
+    opacity: 0.8;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+.landing-page .container button {
+    width: 190px;
+    border: solid 3px #534688;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: #534688;
+    color: white;
+    cursor: pointer;
+}
+
+.landing-page .container button:hover {
+    background-color: white;
+    color: #534688;
+}
+
+/* Big  */
+@media (max-width: 1200px) {
+}
+/* Medium  */
+@media (max-width: 992px) {
+}
+
+/* Small  */
+@media (max-width: 768px) {
+    .landing-page .container {
+        text-align: center;
+        align-items: center;
+    }
+    .landing-page .container h1 {
+        font-size: 45px;
+    }
+}
+
+/* ============ End Landing page ============ */
+
+/* ============ Start About ============ */
+
+.about .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7rem;
+}
+
+.about .container .img-container {
+    width: 400px;
+}
+
+.about .container .img-container img {
+    width: 100%;
+}
+
+.about .container .content h3 {
+    font-size: 15px;
+    color: #999;
+    font-weight: 100;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.about .container .content h2 {
+    font-size: 32px;
+    color: #695aa6;
+    margin-bottom: 1rem;
+}
+
+.about .container .content p {
+    font-size: 15px;
+    color: #999;
+    font-weight: 100;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.about .container .content button {
+    width: 150px;
+    border: solid 3px #534688;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: #534688;
+    color: white;
+    cursor: pointer;
+}
+
+.about .container .content button:hover {
+    background-color: white;
+    color: #534688;
+}
+
+/* Big  */
+@media (max-width: 1200px) {
+}
+/* Medium  */
+@media (max-width: 992px) {
+}
+
+/* Small  */
+@media (max-width: 768px) {
+    .about .container {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+/* ============ End About ============ */
+
+/* ============ Start Portfolio ============ */
+
+.portfolio .container {
+    text-align: center;
+}
+
+.portfolio .container h3 {
+    font-size: 32px;
+    font-family: "Baloo Paaji", cursive;
+    color: #695aa6;
+}
+
+.portfolio .container p {
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 3rem;
+}
+
+.portfolio .container .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.portfolio .container .box-container .box img {
+    width: 100%;
+    height: 100%;
+}
+
+/* العنصر الاب (يحتوي علي العنصر القديم والعنصر الجديد) */
+
+.portfolio .container .box-container .parent-box {
+    width: 30%;
+    position: relative;
+}
+
+/* العنصر الجديد */
+.portfolio .container .box-container .box-new {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e1dfedc1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+.portfolio .container .box-container .box-new h4 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Baloo Paaji", cursive;
+    color: #695aa6;
+    margin-bottom: 0.5rem;
+}
+.portfolio .container .box-container .box-new a {
+    color: #000;
+}
+
+/* التآشير */
+.portfolio .container .box-container .parent-box:hover .box-new {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Big  */
+@media (max-width: 1200px) {
+}
+/* Medium  */
+@media (max-width: 992px) {
+}
+
+/* Small  */
+@media (max-width: 768px) {
+    .portfolio .container .box-container {
+        flex-direction: column;
+    }
+    .portfolio .container .box-container .parent-box {
+        width: 100%;
+    }
+    .portfolio .container .box-container .box-new {
+        opacity: 1;
+        background-color: #e1dfed9d;
+    }
+
+    .portfolio .container .box-container .box-new h4 {
+        font-weight: bold;
+    }
+    .portfolio .container .box-container .box-new a {
+        font-weight: 500;
+    }
+}
+
+/* ============ End Portfolio ============ */
+
+/* ============ Start Blue section ============ */
+.blue-section {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #695aa6;
+}
+.blue-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blue-section .container .left p {
+    font-size: 21px;
+    color: #fff;
+}
+.blue-section .container .left .text-first {
+    font-family: "Baloo Paaji", cursive;
+}
+.blue-section .container .right button {
+    width: 150px;
+    border: solid 3px #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: #fff;
+    color: #695aa6;
+    font-family: "Baloo Paaji", cursive;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Big  */
+@media (max-width: 1200px) {
+}
+/* Medium  */
+@media (max-width: 992px) {
+}
+
+/* Small  */
+@media (max-width: 768px) {
+    .blue-section .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
+    }
+    .testi-sectino .container .parent-item {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testi-sectino .container .parent-item .first {
+        width: 100% !important;
+    }
+    .testi-sectino .container .parent-item .first .img-container {
+        left: 50% !important;
+        bottom: -40px;
+        transform: translate(-50%);
+    }
+}
+
+/* ============ End Blue section ============ */
+
+/* ============ End Blue section ============ */
+.testi-sectino .container {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.testi-sectino .container h5 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    opacity: 0.6;
+    letter-spacing: 0.6px;
+}
+.testi-sectino .container h3 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Baloo Paaji", cursive;
+    color: #695aa6;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.testi-sectino .container .parent-item {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.testi-sectino .container .parent-item .first {
+    border: solid 1px #534688;
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    padding-left: 55px;
+}
+
+.testi-sectino .container .parent-item .first .text {
+    text-align: start;
+}
+
+.testi-sectino .container .parent-item .first .img-container {
+    width: 70px;
+    position: absolute;
+    left: -35px;
+}
+.testi-sectino .container .parent-item .first .img-container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* ============ End Blue section ============ */
+
+/* ============ Start contact ============ */
+
+.contact .container {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.contact .container h5 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    opacity: 0.6;
+    letter-spacing: 0.6px;
+}
+.contact .container h3 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Baloo Paaji", cursive;
+    color: #695aa6;
+    margin-bottom: 3rem;
+    font-weight: bold;
+}
+
+.contact .container form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.contact .container form input {
+    padding: 10px;
+    border: solid 1px #dbcfcf;
+}
+
+.contact .container form textarea {
+    padding: 10px;
+    border: 1px solid rgb(213, 207, 207);
+    resize: vertical;
+    max-height: 300px !important;
+    min-height: 100px;
+}
+
+.contact .container form button {
+    width: 130px;
+    border: solid 3px #534688;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: #534688;
+    color: white;
+    cursor: pointer;
+}
+
+.contact .container form button:hover {
+    background-color: #fff;
+    color: #534688;
+}
+
+/* Big  */
+@media (max-width: 1200px) {
+}
+/* Medium  */
+@media (max-width: 992px) {
+}
+
+/* Small  */
+@media (max-width: 768px) {
+    .contact .container form {
+        padding: 0;
+        align-items: center;
+    }
+    .contact .container form input {
+        width: 100%;
+    }
+    .contact .container form textarea {
+        width: 100%;
+    }
+}
+
+/* ============ End contact ============ */
+
+/* ======= Start Footer Section ======= */
+.footer {
+    border-top: solid 1px black;
+}
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+}
+.footer .container p a {
+    color: #534688;
+}
+.footer .container p a:visited {
+    color: red;
+}
+.footer .container .social-media-links {
+    display: flex;
+    gap: 1rem;
+}
+.footer .container .social-media-links a {
+    border: solid 2px #999;
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+.footer .container .social-media-links a:nth-child(1) {
+    color: #d62977;
+}
+.footer .container .social-media-links a:nth-child(2) {
+    color: #0e72a3;
+}
+.footer .container .social-media-links a:nth-child(3) {
+    color: #292f34;
+}
+@media (max-width: 768px) {
+    .footer .container {
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        height: 25vh;
+    }
+}
+
+/* ============ End Footer Section ============ */
